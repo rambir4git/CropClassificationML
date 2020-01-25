@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Cropify</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_images_history">ImagesHistory</string>
+    <string name="url">https://www.fertiberia.com/en/agriculture/services-for-farmers/calculator/</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="wheat">
+        "Wheat is a grass widely cultivated for its seed, a cereal grain which is a worldwide "
+        "staple food. The many species of wheat together make up the genus Triticum. The most "
+        "widely grown is common wheat. The archaeological record suggests that wheat was first "
+        "cultivated in the regions of the Fertile Crescent around 9600 BCE. Wikipedia"
+    </string>
+
+    <string name="rice">
+        "Rice is the seed of the grass species Oryza sativa or Oryza glaberrima. As a cereal "
+        "grain, it is the most widely consumed staple food for a large part of the world's human "
+        "population, especially in Asia. It is the agricultural commodity with the third-highest "
+        worldwide production, after sugarcane and maize. Wikipedia"
+    </string>
+
+    <string name="maize">
+        "Maize, also known as corn, is a cereal grain first domesticated by indigenous peoples in "
+        "southern Mexico about 10,000 years ago. The leafy stalk of the plant produces pollen "
+        inflorescences and separate ovuliferous inflorescences called ears that yield kernels or "
+        seeds, which are fruits. Wikipedia"
+    </string>
+
+    <string name="mustard">
+        "Mustard plants are any of several plant species in the genera Brassica and Sinapis in the "
+        family Brassicaceae. Mustard seed is used as a spice. Grinding and mixing the seeds with "
+        water, vinegar, or other liquids creates the yellow condiment known as prepared mustard. "
+        The seeds can also be pressed to make mustard oil, and the edible leaves can be eaten as "
+        mustard greens. Wikipedia"
+    </string>
+
+    <string name="cotton">
+        "Cotton is a soft, fluffy staple fiber that grows in a boll, or protective case, around "
+        "the seeds of the cotton plants of the genus Gossypium in the mallow family Malvaceae. "
+        "The fiber is almost pure cellulose. Under natural conditions, the cotton bolls will "
+        "increase the dispersal of the seeds. Wikipedia"
+    </string>
+
+    <string name="potato">
+        "The potato is a root vegetable native to the Americas, a starchy tuber of the plant "
+        "Solanum tuberosum, and the plant itself, a perennial in the family Solanaceae. Wild "
+        "potato species can be found throughout the Americas, from the United States to southern "
+        "Chile. Wikipedia"
+    </string>
+
+    <string name="tomato">
+        "The tomato is the edible, often red, berry of the plant Solanum lycopersicum, commonly "
+        "known as a tomato plant. The species originated in western South America and Central "
+        "America. The Nahuatl word tomatl gave rise to the Spanish word tomate, from which the "
+        "English word tomato derived. Wikipedia"
+    </string>
+
+    <string name="sugarcane">
+        "Sugarcane, or sugar cane, or simply cane, are several species of tall perennial true "
+        "grasses of the genus Saccharum, tribe Andropogoneae, used for sugar production. The plant "
+        "is two to six metres tall. It has stout, jointed, fibrous stalks that are rich in s"
+        "ucrose, a simple sugar which accumulates in the stalk internodes. Wikipedia"
+    </string>
+
+    <string name="tea">
+        "Camellia sinensis is a species of evergreen shrub or small tree whose leaves and leaf "
+        "buds are used to produce tea. It is of the genus Camellia of flowering plants in the "
+        "family Theaceae. Common names include "tea plant", "tea shrub", and "tea tree". Wikipedia"
+    </string>
+
+    <string name="low">Model is not very sure about the type of crop in the given picture</string>
+
+    <string name="unknown">Unknown crop type :(</string>
+</resources>
