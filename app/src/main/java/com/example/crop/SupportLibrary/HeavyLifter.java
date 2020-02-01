@@ -245,7 +245,7 @@ public class HeavyLifter {
             return imageFile;
         }
 
-        private Bitmap decodeByteArray(byte[] data) throws IOException {
+        private Bitmap decodeByteArray(byte[] data) {
             Bitmap b = null;
 
             //Decode image size

@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
    <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/dp"
         android:layout_width="match_parent"
@@ -132,12 +133,11 @@
         android:textColor="@color/dark_green"/>
 
     <TextView
-        android:id="@+id/signout"
+        android:id="@+id/acc_id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
-        android:text="Sign Out"
-        android:textColor="@color/black"
+        android:text="Account ID"
         />
 </LinearLayout>
     </ScrollView>

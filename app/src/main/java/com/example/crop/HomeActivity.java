@@ -18,6 +18,7 @@ import com.example.crop.SupportLibrary.ExportToEmail;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.auth.FirebaseAuth;
+import com.karan.churi.PermissionManager.PermissionManager;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -26,11 +27,16 @@ public class HomeActivity extends AppCompatActivity {
     private CommunityFragment communityFragment;
     private ProfileFragment profileFragment;
     private FirebaseAuth homeAuth;
+    private PermissionManager permissionManager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+
+        permissionManager = new PermissionManager() {
+        };
+        permissionManager.checkAndRequestPermissions(this);
 
         camera = findViewById(R.id.floatingActionButton);
 
@@ -70,20 +76,6 @@ public class HomeActivity extends AppCompatActivity {
         camera.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                /*
-                if (ContextCompat.checkSelfPermission(HomeActivity.this,
-                        Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
-                    if (ActivityCompat.shouldShowRequestPermissionRationale(HomeActivity.this,
-                            Manifest.permission.ACCESS_FINE_LOCATION)){
-                        ActivityCompat.requestPermissions(HomeActivity.this,
-                                new String[]{Manifest.permission.CAMERA}, 1);
-                    }else{
-                        ActivityCompat.requestPermissions(HomeActivity.this,
-                                new String[]{Manifest.permission.CAMERA}, 1);
-                    }
-                }else
-
-                 */
                 startActivity(new Intent(HomeActivity.this, CameraActivity.class));
             }
         });
@@ -123,7 +115,8 @@ public class HomeActivity extends AppCompatActivity {
                     .setNegativeButton("Cancel", null)
                     .create();
             alertDialog.show();
-        } else {
+        }
+        if (item.getItemId() == R.id.fert) {
               startActivity(new Intent(HomeActivity.this,WebViewActivity.class));
         }
             return super.onOptionsItemSelected(item);

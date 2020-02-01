@@ -15,7 +15,6 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.crop.POJOs.HomeCardsAdapter;
@@ -54,10 +53,15 @@ public class HomeFragment extends Fragment {
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
-        savedImagesList = new ArrayList<>();
         recyclerView = view.findViewById(R.id.fragment_home_recyclerview);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setItemAnimator(new DefaultItemAnimator());
+        return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        savedImagesList = new ArrayList<>();
 
         final HomeCardsAdapter.ButtonClickListener bListener = new HomeCardsAdapter.ButtonClickListener() {
             @Override
@@ -94,7 +98,6 @@ public class HomeFragment extends Fragment {
         } else {
             Toast.makeText(getActivity(), "No images yet !!", Toast.LENGTH_SHORT).show();
         }
-        return view;
     }
 
     @Override

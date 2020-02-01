@@ -21,7 +21,6 @@
         <activity android:name=".CameraActivity" />
         <activity android:name=".LocationActivity" />
         <activity android:name=".SliderActivity" />
-        <activity android:name=".SignInActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

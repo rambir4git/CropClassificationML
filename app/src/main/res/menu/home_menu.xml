@@ -15,5 +15,5 @@
         android:id="@+id/menu_export"
         android:icon="?attr/actionModeShareDrawable"
         android:title="Export"
-        app:showAsAction="always" />
+        app:showAsAction="ifRoom" />
 </menu>
