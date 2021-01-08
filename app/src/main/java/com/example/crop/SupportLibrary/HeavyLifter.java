@@ -219,15 +219,15 @@ public class HeavyLifter {
                 List<Address> list = geocoder.getFromLocation(location.getLatitude(),location.getLongitude(),1);
 
             String imageName = "PIC_" + Calendar.getInstance().getTimeInMillis() + ".PNG";
-            String textFileData = "ID: " + imageName +
+            /*String textFileData = "ID: " + imageName +
                     "\n" + Calendar.getInstance().getTime().toString() +
-                    "\nLocation: " + list.get(0).getSubLocality() + "\n";
+                    "\nLocation: " + list.get(0).getSubLocality() + "\n";*/
             imageFile = new File(context.getExternalFilesDir(null), imageName);
                 File textFile = new File(context.getExternalFilesDir(null), "INFORMATION.TXT");
 
                 OutputStream outputStream = new FileOutputStream(textFile, true);
                 OutputStreamWriter writer = new OutputStreamWriter(outputStream);
-                writer.write(textFileData);
+                //writer.write(textFileData);
                 writer.flush();
                 writer.close();
 
